@@ -1,0 +1,96 @@
+<html><head>
+<title>RadioMondragone</title>
+<meta name="description" content="RadioMondragone">
+<meta name="keywords" content="RadioMondragone">
+<meta name="robots" content="RadioMondragone">
+<meta name="googlebot" content="RadioMondragone">
+<link rel="shortcut icon" href="https://i.postimg.cc/v8qdGMQh/gfdddd.png">
+<script src="https://antoniolavezzi.github.io/AntonioMondragone/jquery-3.2.1.min.js"></script><script src="https://antoniolavezzi.github.io/AntonioMondragone/lunaradio-animadoci.js"></script><div id="lunaradio" style="width:100%; height:100%px;"></div>
+
+<!--Player Fatto Da Dj Testardo-->
+<style>
+
+#lunaradio:before,
+
+#lunaradio:after
+
+{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff, #00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    z-index: -1;
+    animation: animate 40s linear infinite;
+ }
+
+#lunaradio:after
+
+{
+    filter:blur(25px);
+
+}
+
+
+@keyframes animate
+{
+
+     0%
+     {
+         background-position: 0 0;
+	 }
+	 50%
+	 {
+	     background-position: 400% 0;
+	 }
+	 100%
+	 {
+	     background-position: 0 0;
+	 }
+
+}
+
+
+
+</style>
+<script>
+$("#lunaradio").lunaradio({
+userinterface: "big", 
+backgroundcolor: "rgb(0, 0, 0)",
+fontcolor: "#ffffff",
+hightlightcolor: "#FFCD00", 
+fontname: "Playball", 
+googlefont: "Playball&display=swap", 
+fontratio: "0.5", 
+radioname: "RadioMondragone ", 
+scroll: "false",
+autoplay: "true", 
+coverimage: "https://i.postimg.cc/v8qdGMQh/gfdddd.png",
+onlycoverimage: "false",
+coverstyle: "false",
+usevisualizer: "real", 
+visualizertype: "7", 
+metadatatechnic: "ownmetadataurl",
+ownmetadataurl: "https://status.rcast.net/71786", 
+streamurl: "https://stream-153.zeno.fm/trndkhr4f0qtv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ0cm5ka2hyNGYwcXR2IiwiaG9zdCI6InN0cmVhbS0xNTMuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IjF1S1l6dDJVVGdPQ3JZQVZxVXV0NUEiLCJpYXQiOjE3MjUzNjc2NzUsImV4cCI6MTcyNTM2NzczNX0.dd5oEOFiJ0uXjSUB2_rqKSVR2gTVjQB0gF3oNhvMDiE", 
+streamtype: "icecast", 
+icecastmountpoint: "/radio.mp3",
+radiozenoid: "fzmaavwwujttv",
+shoutcastpath: "/stream",
+streamid: "", 
+streamsuffix: "", 
+radionomyid: "", 
+radionomyapikey: "",
+radiojarid: "",  
+radiocoid: "",
+itunestoken: "1000lIPN", 
+metadatainterval: "4000", 
+volume: "100",
+debug: "false",
+displayliveicon: "true",
+displayvisualizericon: "true",
+});
+</script>	
